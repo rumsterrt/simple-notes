@@ -1,0 +1,51 @@
+{
+    "name": "simple-notes",
+    "version": "1.0.0",
+    "description": "Simple notes web app",
+    "main": "index.js",
+    "scripts": {
+        "start": "node app.js",
+        "server": "nodemon app.js",
+        "test": "mocha ./server/tests/auth.test.js --timeout 10000",
+        "prettier": "prettier --write \"{src,server}/**/*.{js,css,sass,scss,less}\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rumsterrt/simple-notes.git"
+    },
+    "keywords": [
+        "react",
+        "redux",
+        "typescript",
+        "nodejs",
+        "mongoDB"
+    ],
+    "author": "Anatoly Ryumkin <rumsterrt@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/rumsterrt/simple-notes/issues"
+    },
+    "homepage": "https://github.com/rumsterrt/simple-notes#readme",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.19.0",
+        "config": "^3.2.5",
+        "express": "^4.17.1",
+        "express-validator": "^6.3.1",
+        "jsonwebtoken": "^8.5.1",
+        "lodash": "^4.17.15",
+        "mongoose": "^5.8.10"
+    },
+    "devDependencies": {
+        "babel-eslint": "^10.0.3",
+        "concurrently": "^5.1.0",
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.10.0",
+        "eslint-config-react-app": "^5.2.0",
+        "eslint-plugin-prettier": "^3.1.2",
+        "mocha": "^7.0.1",
+        "nodemon": "^2.0.2",
+        "prettier": "^1.19.1",
+        "supertest": "^4.0.2"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "port": "5000",
+    "mongoURI": "mongodb+srv://<user_name>:<password>@cluster0-gqopz.mongodb.net/app?retryWrites=true&w=majority",
+    "jwt_secret": "secret",
+    "jwt_lifetime": "1h"
+}
