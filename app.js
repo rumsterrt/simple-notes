@@ -12,11 +12,14 @@ const PORT = config.get('port') || 5000
 
 routers.forEach(router => app.use(`/api/${router.path}`, router.router))
 
+mongoose.Promise = global.Promise
+
 async function start() {
     try {
         await mongoose.connect(config.get('mongoURI'), {
             useNewUrlParser: true,
             useUnifiedTopology: true,
+            useFindAndModify: false,
             useCreateIndex: true,
         })
 

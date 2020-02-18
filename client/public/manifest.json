@@ -1,0 +1,8 @@
+{
+    "short_name": "Simple notes",
+    "name": "Simple Notes App",
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}

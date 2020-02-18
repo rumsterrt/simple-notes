@@ -6,8 +6,9 @@
     "scripts": {
         "start": "node app.js",
         "server": "nodemon app.js",
-        "test": "mocha ./server/tests/auth.test.js --timeout 10000",
-        "prettier": "prettier --write \"{src,server}/**/*.{js,css,sass,scss,less}\""
+        "client": "npm run start --prefix client",
+        "prettier": "prettier --write \"{src,server}/**/*.{js,css,sass,scss,less}\"",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
     },
     "repository": {
         "type": "git",
